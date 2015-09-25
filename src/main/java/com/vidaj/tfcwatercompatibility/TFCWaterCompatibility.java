@@ -51,7 +51,7 @@ public class TFCWaterCompatibility {
 	private void replaceWaterInBlocksStaticField() {
 		try {
 			Field field = Blocks.class.getDeclaredField("field_150355_j");
-			replaceValueInStaticFinalField(TFCBlocks.FreshWater, field);
+			replaceValueInStaticFinalField(TFCBlocks.freshWater, field);
 		} catch (Exception e) {
 			throw new IllegalStateException("Cannot replace vanilla water block", e);
 		}
